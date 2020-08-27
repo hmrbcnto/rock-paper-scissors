@@ -1,0 +1,55 @@
+body {
+	color: #FFDA90;
+	font-family: helvetica;
+}
+
+
+#gameDisplay{
+	text-align: center;
+	padding: 15px;
+	background-color:#8A89E8;
+	margin: 10px;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+
+
+#choices{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+}
+
+.choiceButton{
+	font-size: 50px;
+	margin: 0 auto;
+}
+
+
+#gameDiv{
+	width: 500;
+	height: 500;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #AABDFC;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#scoreDiv{
+	display: flex;
+	width:300px;
+	background-color: #1C4466;
+	margin: 0 auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+p{
+	margin: 0 auto;
+}
+
+.scoreKeeper{
+	margin:0 auto;
+}

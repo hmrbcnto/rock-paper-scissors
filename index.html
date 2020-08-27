@@ -40,7 +40,7 @@
 			let pchoice = window.prompt("What is your choice? Rock, Paper, or Scissors?")
 			let cchoice = computerChoice()
 			let result = playRound(cchoice, pchoice)
-			console.log(cchoice)
+			console.log(`Computer chose: ${cchoice}`)
 			switch(result){
 				case 1:
 					console.log("Player wins the round!")
@@ -51,6 +51,7 @@
 					cscore += 1;
 					break;
 				default:
+					console.log("It's a draw!")
 					break;
 			}
 			console.log(`Current score is 
