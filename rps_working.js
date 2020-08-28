@@ -72,6 +72,12 @@ const cChoice = ['Rock','Paper','Scissors'];
 //selects all button elements in html
 const btn = document.querySelectorAll("button")
 
+//selects element with roundResult id
+const roundResult = document.querySelector("#roundResult")
+
+//selects element with choiceResult id
+const choiceResult = document.querySelector("#choiceResult")
+
 
 //score trackers
 let compScore = 0;
@@ -95,26 +101,29 @@ btn.forEach((button) => {
 		//runs playRound function and saves result as res
 		let res = playRound(ccChoice, ppChoice);
 
+		//displaying results
+		choiceResult.innerHTML = `Computer chose ${ccChoice}, player chose ${ppChoice}!`
+
 		//translates results of res into human readable info
 		switch(res){
 
 			//displays computer wins the round then adds to computer's score
 			case 0:
-				console.log("Computer wins!");
 				compScore += 1;
 				addCompScore(compScore);
+				roundResult.innerHTML = "Computer wins!"
 				break;
 
 			//displays player wins the round then adds to computer's score
 			case 1:
-				console.log("Player wins!");
 				playScore += 1
 				addPlayScore(playScore);
+				roundResult.innerHTML = "Player wins!"
 				break;
 
 			//displays draw
 			default:
-				console.log("It's a draw!");
+				roundResult.innerHTML = "It's a draw!"
 		}
 
 

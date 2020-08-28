@@ -11,6 +11,11 @@ body {
 	margin: 10px;
 	border-radius: 5px;
 	margin-top: 50px;
+	font-family: monospace;
+	text-shadow: 2px 2px #781330;
+	font-size: 3vw;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 
@@ -28,22 +33,24 @@ body {
 
 
 #gameDiv{
-	width: 500;
-	height: 500;
+	width: 90vw;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #AABDFC;
 	border-radius: 5px;
 	padding: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #scoreDiv{
 	display: flex;
-	width:300px;
+	width:20vw;
 	background-color: #1C4466;
 	margin: 0 auto;
 	padding: 5px;
 	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	flex-direction: column;
 }
 
 p{
@@ -52,4 +59,23 @@ p{
 
 .scoreKeeper{
 	margin:0 auto;
+}
+
+#resultDiv{
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+	font-style: monospace;
+	width: 20vw;
+	background-color:#1C4466;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#calcDiv{
+	display: flex;
+}
+
+#emptyDiv{
+	width:50vw;
 }
